@@ -1,0 +1,88 @@
+body{
+    background-image: url(./imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen para que cubra todo */
+    background-position: center; /* Centra la imagen en la pantalla */
+    height: 100vh; /* Establece la altura del body al 100% del viewport */
+    width: 100vw; /* Asegura que el ancho ocupe toda la pantalla */
+    margin: 0; /* Elimina márgenes predeterminados */
+
+}
+
+.fotomia{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 15px;
+}
+
+.divfotomia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1Nombre{
+    text-align: center;
+    color: white;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.botones button{
+    width: 700px;
+    height: 50px;
+    display: block;
+    margin: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #9e9c9c;
+
+
+  }
+
+.botones{
+    position: absolute;
+   left: 50%; 
+    transform: translateX(-50%);
+    padding: 30px;
+}
+
+a{
+    color:black ;
+    text-decoration: none;
+display: block;
+}
+
+
+
+footer {
+    background-color: #4f4f4f;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-container a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.footer-container a img:hover {
+    transform: scale(1.2);
+}

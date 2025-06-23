@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+
+body {
+  background-color: #f4f4f5;
+  color: #111;
+  line-height: 1.6;
+    text-align: center;
+
+}
+header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.btn-volver {
+  position: absolute;
+  left: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #4b5563;
+}
+
+
+.titulo-centro {
+  font-size: 1.5rem;
+}
+
+
+
+
+
+section {
+  padding: 4rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+#home h1 {
+  font-size: 3rem;
+  color: #1f2937;
+}
+
+#home p {
+  font-size: 1.2rem;
+
+  color: #374151;
+}
+
+
+
+.proyecto {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.proyecto h3 {
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+/* Imagen del proyecto */
+.proyecto img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 1rem ;
+}
+
+
+.proyectos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.proyecto {
+  flex: 0 0 auto;
+  width: 270px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.proyecto img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+/*ESTILOS PARA LA CALCULADORA*/
+#bodyProyectos {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f3f3;
+  text-align: center;
+}
+
+
+
+
+
+.bloque {
+  padding: 60px 20px;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #a30d1d;
+}
+
+.calculadora {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+#pantalla {
+  width: 100%;
+  height: 70px;
+  font-size: 32px;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #d5d5d5;
+}
+
+.operacion {
+  background-color: #444;
+  color: white;
+}
+
+.borrar {
+  grid-column: span 4;
+  background-color: #ff4d4d;
+  color: white;
+}
+
+
+
+
+
+/* RELOJ DIGITAL */
+#bodyProyectos {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f3f3;
+  text-align: center;
+}
+
+
+
+.bloque {
+  padding: 60px 20px;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #a30d1d;
+}
+
+.contenedor-reloj {
+  background-color: #000;
+  color: rgb(255, 135, 135);
+  padding: 40px 60px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+#hora {
+  font-size: 5rem;
+}
+
+
+
+
+
+
+/* DADOS */
+#bodyProyectos {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+
+
+.bloque {
+  padding: 60px 20px;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  color: #a30d1d;
+  margin-bottom: 20px;
+}
+
+.contenedor-dado {
+  background-color: white;
+  border: 2px solid #a30d1d;
+  padding: 40px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+#resultado {
+  font-size: 6rem;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #a30d1d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #870000;
+}
+
+
+
+
+
+
+
+/* NAV principal */
+nav {
+  position: relative;
+  background-color: #a30d1d;
+  padding: 20px 0;
+}
+
+/* Botón izquierdo */
+nav .volver {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #870000;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+nav .volver:hover {
+  background-color: #5f0000;
+}
+
+
+.nav-central {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-central a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+

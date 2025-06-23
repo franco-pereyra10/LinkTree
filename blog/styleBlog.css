@@ -1,0 +1,993 @@
+/*B L O G*/
+#bodyBlog {
+  background-color: #da2121;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 600px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.formulario label,
+.formulario input,
+.formulario textarea {
+  width: 50%;
+}
+
+.formulario label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+  margin-bottom: 35px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #b30000;
+}
+
+/*FOOTER*/
+#footerContacto {
+  background-color: #4f4f4f;
+  padding: 10px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-container a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.footer-container a img:hover {
+  transform: scale(1.2);
+}
+
+nav {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  justify-content: left;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  margin: 0;
+}
+
+nav a:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e60000;
+  font-family: 'Arial Black', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+/* Encabezado */
+header {
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace;
+  margin-top: -10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Galería de imágenes */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  background: #000;
+  padding: 4px;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 300px;
+  flex: 1;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+}
+
+.image-box h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 10px 0 0 0;
+  font-family: Arial, sans-serif;
+}
+
+.image-box:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+/*E S T I L O S    P A R A    L A S    5    P A G I N A S     D E L     B LO G*/
+
+
+/* Menú de navegación */
+.navbar {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.nav-logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.nav-button .blog-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.nav-button .blog-btn:hover {
+  background-color: #b91c1c;
+}
+
+.nav-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 999; /* Asegura que quede arriba de todo sin tapar contenido */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos generales */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#body5Paginas {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+.hero-bg {
+  padding: 0;
+  margin: 0;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.header-content {
+  text-align: center;
+  color: white;
+  padding: 16px;
+}
+
+.header-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.header-content p {
+  font-size: 18px;
+}
+
+/* Sección de Historia */
+.history-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.history-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #dc2626;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.history-text p {
+  font-size: 18px;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.history-image img {
+  width: 110%;
+  height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Información Actual */
+.current-section {
+  background-color: #c92424;
+  color: white;
+  padding: 48px 16px;
+}
+
+.current-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.current-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.current-item {
+  text-align: center;
+}
+
+.current-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.current-item p {
+  font-size: 18px;
+}
+
+/* Galería de Imágenes */
+.gallery-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.gallery-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #dc2626;
+}
+
+.gallery-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.gallery-content img {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Media Queries para diseño responsive */
+@media (min-width: 768px) {
+  .header-content h1 {
+    font-size: 48px;
+  }
+
+  .header-content p {
+    font-size: 20px;
+  }
+
+  .history-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .current-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+/* Pie de página */
+footer {
+  background-color: #560101;
+  color: white;
+  padding: 10px;
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footer-content p:last-child {
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* M E D I A S    P A R A     R E S P O N S I V E     D E L     B L O G*/
+
+
+
+/* Media Query para pantallas grandes (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    height: 550px;
+  }
+
+  .formulario label,
+  .formulario input,
+  .formulario textarea {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .gallery {
+    gap: 15px;
+    margin: 30px 15px;
+  }
+
+  .image-box {
+    max-width: 250px;
+  }
+
+  .history-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .current-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Query para tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: 500px;
+  }
+
+  .formulario label,
+  .formulario input,
+  .formulario textarea {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 10px;
+    justify-items: center;
+  }
+
+  .image-box {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .history-section h2, .current-section h2, .gallery-section h2 {
+    font-size: 28px;
+  }
+
+  .history-content {
+    grid-template-columns: 1fr;
+  }
+
+  .current-content {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query para teléfonos pequeños (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .formulario label,
+  .formulario input,
+  .formulario textarea {
+    width: 90%;
+  }
+
+  .formulario label {
+    font-size: 16px;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .formulario button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 5px;
+  }
+
+  .image-box {
+    max-width: 90%;
+  }
+
+  .nav-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-button .blog-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 16px;
+  }
+
+  .history-section, .current-section, .gallery-section {
+    padding: 24px 8px;
+  }
+
+  .history-section h2, .current-section h2,ασ
+
+  .gallery-section h2 {
+    font-size: 24px;
+  }
+
+  .history-text p, .current-item p {
+    font-size: 16px;
+  }
+
+  .current-item h3 {
+    font-size: 20px;
+  }
+
+  .footer-content p {
+    font-size: 16px;
+  }
+
+  .footer-container a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+
+
+/* M E D I A S    P A R A     R E S P O N S I V E     L A S      P A G I N A S     D E L     B L O G*/
+
+/* Media Query para tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .nav-button {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    border-radius: 4px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 120px;
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 90%;
+    height: 500px;
+  }
+
+  .formulario label,
+  .formulario input,
+  .formulario textarea {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 10px;
+    justify-items: center;
+  }
+
+  .image-box {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .history-section h2,
+  .current-section h2,
+  .gallery-section h2 {
+    font-size: 28px;
+  }
+
+  .history-content {
+    grid-template-columns: 1fr;
+  }
+
+  .current-content {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query para teléfonos pequeños (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .nav-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    border-radius: 4px;
+  }
+
+
+.nav-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px;
+  }
+
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 140px;
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .formulario label,
+  .formulario input,
+  .formulario textarea {
+    width: 90%;
+  }
+
+  .formulario label {
+    font-size: 16px;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .formulario button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 5px;
+  }
+
+  .image-box {
+    max-width: 90%;
+  }
+
+  .nav-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-button .blog-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 16px;
+  }
+
+  .history-section,
+  .current-section,
+  .gallery-section {
+    padding: 24px 8px;
+  }
+
+  .history-section h2,
+  .current-section h2,
+  .gallery-section h2 {
+    font-size: 24px;
+  }
+
+  .history-text p,
+  .current-item p {
+    font-size: 16px;
+  }
+
+  .current-item h3 {
+    font-size: 20px;
+  }
+
+  .footer-content p {
+    font-size: 16px;
+  }
+
+  .footer-container a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+#bodySobreMi {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(52, 1, 1);
+  color: #000;
+ 
+}
+
+/* contenedor principal */
+.presentacion {
+  padding: 60px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+
+.contenido {
+  display: flex;
+  flex-direction: row;
+  background-color: #e70e23;
+  border: 4px solid white;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  padding: 50px;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+
+
+
+
+.foto {
+  width: 320px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 15px white;
+  border: 3px solid white;
+}
+
+
+.texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.texto h1 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.texto p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE PARA LA PAGINA DE SOBRE MI */
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .foto {
+    width: 85%;
+    max-width: 350px;
+  }
+
+  .texto {
+    width: 100%;
+  }
+
+  .texto h1 {
+    font-size: 2em;
+  }
+
+  .texto p {
+    font-size: 1.1em;
+  }
+}
