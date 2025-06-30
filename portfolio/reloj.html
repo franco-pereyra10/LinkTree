@@ -2,29 +2,78 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reloj Digital</title>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
-<body id="bodyProyectos">
+<body id="bodyReloj">
 
-  <nav>
+<nav>
   <a href="portfolio.html" class="volver">Volver al portfolio</a>
-  <ul class="nav-central">
+
+  <!-- Botón hamburguesa -->
+  <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+  <!-- Menú navegable -->
+  <ul class="nav-central" id="menu">
     <li><a href="reloj.html">Reloj</a></li>
     <li><a href="dados.html">Dados</a></li>
     <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a href="contactoPortfolio.html">Contacto</a></li>
   </ul>
 </nav>
 
 
-
   <section class="bloque">
-    <h2 class="titulo-seccion">Hora Actual</h2>
-    <div class="contenedor-reloj">
-      <h1 id="hora">00:00:00</h1>
+    <h2 class="titulo-seccion">Hora en Distintas Ciudades</h2>
+
+    <div class="relojes-grid">
+      <div class="reloj-box">
+        <h3>Argentina 🇦🇷</h3>
+        <div id="hora-arg">--:--:--</div>
+      </div>
+
+      <div class="reloj-box">
+        <h3>Miami 🇺🇸</h3>
+        <div id="hora-usa">--:--:--</div>
+      </div>
+
+      <div class="reloj-box">
+        <h3>Brasil 🇧🇷</h3>
+        <div id="hora-br">--:--:--</div>
+      </div>
+
+<div class="reloj-box">
+  <h3>Madrid 🇪🇸</h3>
+  <div id="hora-madrid">--:--:--</div>
+</div>
+
+<div class="reloj-box">
+  <h3>Tokio 🇯🇵</h3>
+  <div id="hora-tokio">--:--:--</div>
+</div>
+
+<div class="reloj-box">
+  <h3>Ciudad de México 🇲🇽</h3>
+  <div id="hora-mexico">--:--:--</div>
+</div>
+
+
     </div>
   </section>
 
   <script src="reloj.js"></script>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
+
 </body>
 </html>
+

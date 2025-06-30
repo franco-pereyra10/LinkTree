@@ -2,52 +2,97 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Calculadora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadoras</title>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body id="bodyProyectos">
 
+
 <nav>
   <a href="portfolio.html" class="volver">Volver al portfolio</a>
-  <ul class="nav-central">
+
+  <!-- Botón hamburguesa -->
+  <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+  <!-- Menú navegable -->
+  <ul class="nav-central" id="menu">
     <li><a href="reloj.html">Reloj</a></li>
     <li><a href="dados.html">Dados</a></li>
     <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a href="contactoPortfolio.html">Contacto</a></li>
   </ul>
 </nav>
 
 
-
   <section class="bloque">
-    <h2 class="titulo-seccion">Calculadora</h2>
-    <div class="calculadora">
-      <input type="text" id="pantalla" disabled />
-      <div class="botones">
-        <button onclick="agregar('7')">7</button>
-        <button onclick="agregar('8')">8</button>
-        <button onclick="agregar('9')">9</button>
-        <button class="operacion" onclick="agregar('/')">÷</button>
+    <h2 class="titulo-seccion">Calculadoras</h2>
+  
 
-        <button onclick="agregar('4')">4</button>
-        <button onclick="agregar('5')">5</button>
-        <button onclick="agregar('6')">6</button>
-        <button class="operacion" onclick="agregar('*')">×</button>
+  <!-- CALCULADORA NORMAL -->
+  <section class="calculadora-box">
+    <h2>Calculadora Normal</h2>
+    <input type="text" id="pantalla-normal" disabled />
+    <div class="botones">
+      <button onclick="agregar('7')">7</button>
+      <button onclick="agregar('8')">8</button>
+      <button onclick="agregar('9')">9</button>
+      <button onclick="agregar('/')">÷</button>
 
-        <button onclick="agregar('1')">1</button>
-        <button onclick="agregar('2')">2</button>
-        <button onclick="agregar('3')">3</button>
-        <button class="operacion" onclick="agregar('-')">−</button>
+      <button onclick="agregar('4')">4</button>
+      <button onclick="agregar('5')">5</button>
+      <button onclick="agregar('6')">6</button>
+      <button onclick="agregar('*')">×</button>
 
-        <button onclick="agregar('0')">0</button>
-        <button onclick="agregar('.')">.</button>
-        <button onclick="calcular()">=</button>
-        <button class="operacion" onclick="agregar('+')">+</button>
+      <button onclick="agregar('1')">1</button>
+      <button onclick="agregar('2')">2</button>
+      <button onclick="agregar('3')">3</button>
+      <button onclick="agregar('-')">−</button>
 
-        <button class="borrar" onclick="borrar()">C</button>
-      </div>
+      <button onclick="agregar('0')">0</button>
+      <button onclick="agregar('.')">.</button>
+      <button onclick="calcular()">=</button>
+      <button onclick="agregar('+')">+</button>
+
+      <button class="borrar" onclick="borrar()">C</button>
     </div>
   </section>
 
+
+
+  <!-- CONVERSOR DE MEDIDAS -->
+  <section class="calculadora-box">
+    <h2>Conversor de Medidas</h2>
+    <label for="valor">Cantidad:</label>
+    <input type="number" id="valor" />
+
+    <label for="tipo">Tipo de conversión:</label>
+    <select id="tipo">
+      <option value="km-mi">Kilómetros a Millas</option>
+      <option value="mi-km">Millas a Kilómetros</option>
+      <option value="kg-lb">Kilogramos a Libras</option>
+      <option value="lb-kg">Libras a Kilogramos</option>
+      <option value="c-f">Celsius a Fahrenheit</option>
+      <option value="f-c">Fahrenheit a Celsius</option>
+    </select>
+
+    <button onclick="convertir()">Convertir</button>
+    <p id="resultado"></p>
+  </section>
+
   <script src="calculadora.js"></script>
+
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
+
+
 </body>
 </html>

@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+
+
+.bloque {
+  padding: 40px 20px;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  color: #2f1c97;
+  margin-bottom: 20px;
+}
+
+.contenedor-dados {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.contenedor-dados img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #2323b7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0d0a6d;
+}
+
+#resultadoSuma {
+  font-size: 2rem;
+  color: #333;
+}
+
+.historial {
+  margin-top: 20px;
+}
+
+.historial h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2323b7;
+}
+
+#historial-lista {
+  list-style: none;
+  padding: 0;
+  color: #444;
+}
+
+
+
+
+
+
+
+
+
+/* BOTON HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-central {
+    display: none;
+    flex-direction: column;
+    background-color: #1f2937;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-central li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-central.show {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+/* NAV principal */
+nav {
+  position: relative;
+  background-color: #1f2937;
+  padding: 20px 0;
+}
+
+/* Botón izquierdo */
+nav .volver {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #2a1797;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+nav .volver:hover {
+  background-color: #0b005f;
+}
+
+
+.nav-central {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-central a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-central a:hover{
+  color: rgb(40, 40, 189);
+}
+
+
+
+
+
+
+
+
+
+
+
+nav {
+  position: relative;
+  background-color: #1f2937;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para los enlaces dentro del menú */
+.nav-central a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilo para "volver al portfolio" */
+.volver {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: #2a1797;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .nav-central {
+    display: none;
+    flex-direction: column;
+    background-color: #1f2937;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-central.show {
+    display: flex;
+  }
+}

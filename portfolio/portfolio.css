@@ -158,71 +158,61 @@ footer {
 
 
 /*ESTILOS PARA LA CALCULADORA*/
-#bodyProyectos {
-  margin: 0;
+#bodyCalculadora {
   font-family: 'Segoe UI', sans-serif;
-  background: #f3f3f3;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 30px 20px;
   text-align: center;
 }
 
 
 
-
-
-.bloque {
-  padding: 60px 20px;
-}
-
-.titulo-seccion {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #a30d1d;
-}
-
-.calculadora {
-  background: white;
+.calculadora-box {
+  background-color: #294dc2;
+  border-radius: 12px;
   padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="text"], input[type="number"] {
   width: 90%;
   max-width: 400px;
-  margin: auto;
-}
-
-#pantalla {
-  width: 100%;
-  height: 70px;
-  font-size: 32px;
-  text-align: right;
-  margin-bottom: 20px;
   padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 1px solid #000144;
+  margin-bottom: 20px;
+  background-color: rgb(209, 217, 252);
 }
 
 .botones {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 10px;
+  justify-items: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-button {
-  padding: 20px;
-  font-size: 20px;
+.botones button {
+  color: rgb(1, 6, 84);
+  padding: 15px;
+  font-size: 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #e0e0e0;
   cursor: pointer;
   transition: background 0.2s;
+  width: 100%;
 }
 
-button:hover {
-  background-color: #d5d5d5;
-}
-
-.operacion {
-  background-color: #444;
-  color: white;
+.botones button:hover {
+  background-color: #ccc;
 }
 
 .borrar {
@@ -231,12 +221,27 @@ button:hover {
   color: white;
 }
 
+select, button {
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
 
 
 
 
 /* RELOJ DIGITAL */
-#bodyProyectos {
+
+
+#bodyReloj {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: #f3f3f3;
@@ -244,79 +249,67 @@ button:hover {
 }
 
 
-
+/* CONTENIDO */
 .bloque {
   padding: 60px 20px;
 }
 
 .titulo-seccion {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #a30d1d;
+  color: #161699;
+  margin-bottom: 40px;
 }
 
-.contenedor-reloj {
+/* RELOJES */
+.relojes-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.reloj-box {
   background-color: #000;
-  color: rgb(255, 135, 135);
-  padding: 40px 60px;
+  color: rgb(41, 88, 198);
   border-radius: 15px;
-  display: inline-block;
+  padding: 30px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-#hora {
-  font-size: 5rem;
+.reloj-box h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
-
-
-
-
-
-/* DADOS */
-#bodyProyectos {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
-  text-align: center;
-}
-
-
-
-.bloque {
-  padding: 60px 20px;
-}
-
-.titulo-seccion {
+.reloj-box div {
   font-size: 2.5rem;
-  color: #a30d1d;
-  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.contenedor-dado {
-  background-color: white;
-  border: 2px solid #a30d1d;
-  padding: 40px;
-  border-radius: 15px;
-  display: inline-block;
+/* Responsive */
+@media (max-width: 768px) {
+  .relojes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-central {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  nav .volver {
+    position: static;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
 }
 
-#resultado {
-  font-size: 6rem;
-}
 
-button {
-  padding: 15px 30px;
-  font-size: 20px;
-  background-color: #a30d1d;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #870000;
-}
 
 
 
@@ -327,7 +320,7 @@ button:hover {
 /* NAV principal */
 nav {
   position: relative;
-  background-color: #a30d1d;
+  background-color: #1f2937;
   padding: 20px 0;
 }
 
@@ -340,7 +333,7 @@ nav .volver {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  background-color: #870000;
+  background-color: #2a1797;
   padding: 8px 14px;
   border-radius: 8px;
   font-size: 16px;
@@ -348,7 +341,7 @@ nav .volver {
 }
 
 nav .volver:hover {
-  background-color: #5f0000;
+  background-color: #0b005f;
 }
 
 
@@ -369,3 +362,185 @@ nav .volver:hover {
   font-weight: bold;
 }
 
+.nav-central a:hover{
+  color: rgb(64, 64, 194);
+}
+
+
+
+.btn-contacto {
+  position: absolute;
+  right: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #4b5563;
+}
+
+
+
+
+
+
+
+
+/* BOTON HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-central {
+    display: none;
+    flex-direction: column;
+    background-color: #1f2937;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-central li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-central.show {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE PARA EL PORTFOLIO*/
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  .titulo-centro {
+    font-size: 1.2rem;
+  }
+
+  .btn-volver {
+    font-size: 12px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .proyectos-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .proyecto {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+
+
+
+/*ESTILOS PARA EL SOBRE MI*/
+
+#sobre-mi {
+  background-color: #e5e7eb;
+  border-radius: 12px;
+}
+
+.sobre-mi-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sobre-mi-contenido img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sobre-mi-contenido p {
+  max-width: 500px;
+  text-align: left;
+  color: #374151;
+}
+
+
+
+
+
+
+
+
+/*ESTILOS PARA LA PAGINA DE CONTACTO*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto; /* 🔸 Esto centra horizontalmente */
+  padding: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formulario button {
+  padding: 0.75rem;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #374151;
+}

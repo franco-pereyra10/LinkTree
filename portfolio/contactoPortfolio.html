@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Mi Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+
+
+
+<body>
+<nav>
+  <a href="portfolio.html" class="volver">Volver al portfolio</a>
+
+  <!-- Botón hamburguesa -->
+  <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+  <!-- Menú navegable -->
+  <ul class="nav-central" id="menu">
+    <li><a href="reloj.html">Reloj</a></li>
+    <li><a href="dados.html">Dados</a></li>
+    <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a href="contactoPortfolio.html">Contacto</a></li>
+  </ul>
+</nav>
+
+
+  <section>
+    <h2>Contáctame</h2>
+    <form class="formulario">
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Franco. Todos los derechos reservados.</p>
+  </footer>
+
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>

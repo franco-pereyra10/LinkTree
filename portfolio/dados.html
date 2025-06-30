@@ -2,30 +2,61 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Tirar Dado</title>
-  <link rel="stylesheet" href="portfolio.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dados Aleatorios</title>
+  <link rel="stylesheet" href="dados.css" />
 </head>
 <body id="bodyProyectos">
 
-
- <nav>
+<nav>
   <a href="portfolio.html" class="volver">Volver al portfolio</a>
-  <ul class="nav-central">
+
+  <!-- Botón hamburguesa -->
+<button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+  <!-- Menú navegable -->
+<ul class="nav-central" id="menu">
     <li><a href="reloj.html">Reloj</a></li>
     <li><a href="dados.html">Dados</a></li>
     <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a href="contactoPortfolio.html">Contacto</a></li>
   </ul>
 </nav>
 
 
   <section class="bloque">
-    <h2 class="titulo-seccion">Tirar el Dado</h2>
-    <div class="contenedor-dado">
-      <h1>Dado: <span id="resultado">🎲</span></h1>
-      <button onclick="tirarDado()">Tirar Dado</button>
+    <h2 class="titulo-seccion">Lanzamiento de Dados</h2>
+
+    <div class="contenedor-dados">
+      <img id="dado1" src="../Identikit/imagenes/dado1.png" alt="Dado 1">
+      <img id="dado2" src="../Identikit/imagenes/dado1.png" alt="Dado 2">
+    </div>
+
+    <h3 id="resultadoSuma">Resultado: 2</h3>
+
+    <button onclick="lanzarDados()">Lanzar Dados</button>
+
+    <div class="historial">
+      <h4>Historial de tiradas</h4>
+      <ul id="historial-lista"></ul>
     </div>
   </section>
 
   <script src="dados.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  });
+</script>
+
+
+
+
 </body>
 </html>
